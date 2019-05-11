@@ -8,6 +8,9 @@
 
 #include <iostream>
 #include <cmath>
+#include <cctype>
+#include <stdlib.h>
+#include <ctime>
 
 using namespace std;
 
@@ -24,6 +27,9 @@ void DisplayResult(int secretNumber,int numberOfTries);
 int main()
 {
 
+
+	srand((unsigned int) time(NULL));
+
 	do {
 
 		PlayGame();
@@ -37,7 +43,7 @@ int main()
 void PlayGame()
 {
 	const int UPPER_BOUND = 100;
-	int secretNumber = 65;
+	int secretNumber = rand() % UPPER_BOUND;
 	int numberOfTries = ceil(log2(UPPER_BOUND));
 	int guess = 0;
 
@@ -78,6 +84,11 @@ bool WantToPlayAgain()
 				cout << "Input error! Please try again." << endl;
 				failure = true;
 			}
+		else
+		{
+			cin.ignore(IGNORE_CHARS,'\n');
+			input = tolower(input);
+		}
 
 
 	}while(failure);
