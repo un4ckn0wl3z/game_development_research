@@ -1,0 +1,47 @@
+//============================================================================
+// Name        : DynamicMemPractices.cpp
+// Author      : Anuwat
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+char * ReverseCopy(char * phrase);
+
+int main() {
+
+	const int MAX_BUFFER_LEN = 256;
+	char buffer[MAX_BUFFER_LEN];
+	cout << "Please enter a phase: ";
+	cin.get(buffer, MAX_BUFFER_LEN - 1);
+	cout << "Your input was : " << buffer << endl;;
+
+	char * optrReversePhrase = ReverseCopy(buffer);
+
+	cout << "The phrase was: " << optrReversePhrase << endl;
+
+	delete[] optrReversePhrase;
+	optrReversePhrase = nullptr;
+
+	return 0;
+}
+
+char * ReverseCopy(char * phrase) {
+	int len = strlen(phrase);
+	char * reverseString = new char[len + 1];
+	int j = 0;
+	for(int i = len - 1; i>=0;i--)
+	{
+		reverseString[j] = phrase[i];
+		j++;
+
+	}
+	reverseString[j] = '\0';
+	return reverseString;
+
+}
