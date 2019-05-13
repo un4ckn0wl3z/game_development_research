@@ -1,0 +1,7 @@
+11:59:36 **** Incremental Build of configuration Debug for project DynamicMemPractices ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DynamicMemPractices.o" "..\\src\\DynamicMemPractices.cpp" 
+g++ -o DynamicMemPractices.exe "src\\DynamicMemPractices.o" 
+
+11:59:36 Build Finished. 0 errors, 0 warnings. (took 714ms)
+

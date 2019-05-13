@@ -1,0 +1,27 @@
+//============================================================================
+// Name        : Arrays.cpp
+// Author      : Anuwat
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	const int MAX = 5;
+	int intArrays[MAX] = { 2, 4, 6, 8, 10 };
+
+	int * ptr = nullptr;
+
+	ptr = intArrays;
+
+
+	cout << "The value of pointed to by ptr is :" << *ptr << endl;
+
+
+
+	return 0;
+}

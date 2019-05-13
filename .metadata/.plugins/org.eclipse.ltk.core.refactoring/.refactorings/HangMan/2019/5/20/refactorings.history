@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HangMan/src/Utils&apos; to &apos;Utils.h&apos;" description="Rename resource &apos;Utils&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Utils" name="Utils.h" stamp="1557675362035" updateReferences="true"/>
+</session>

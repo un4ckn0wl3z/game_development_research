@@ -1,0 +1,10 @@
+#ifndef __CORE_H__
+#define __CORE_H__
+
+#include "Utils.h"
+#include "Messages.h"
+
+
+
+
+#endif /* CORE_H_ */

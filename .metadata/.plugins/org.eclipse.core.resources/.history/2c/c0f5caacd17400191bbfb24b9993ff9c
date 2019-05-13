@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : HangMan.cpp
+// Author      : Anuwat
+// Version     : v0.1
+// Copyright   : Your copyright notice
+// Description : Simple HangMan game in C++, Ansi-style
+//============================================================================
+
+
+int main() {
+
+	do {
+
+		PlayGame();
+
+	} while (WantToPlayAgain());
+
+	return 0;
+}

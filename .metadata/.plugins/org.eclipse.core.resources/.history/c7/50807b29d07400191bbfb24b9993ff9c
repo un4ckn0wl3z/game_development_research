@@ -1,0 +1,15 @@
+#ifndef __UTILS_H__
+#define __UTILS_H__
+
+#include <iostream>
+#include <cstring>
+#include <cctype>
+using namespace std;
+
+const int IGNORE_CHARS = 256;
+
+char GetCharacter(const char * prompt, const char * error,
+		const char validInput[], int validInputLen);
+char GetCharacter(const char * prompt, const char * error);
+
+#endif

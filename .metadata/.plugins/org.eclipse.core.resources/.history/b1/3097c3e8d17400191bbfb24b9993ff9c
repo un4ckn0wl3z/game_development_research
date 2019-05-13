@@ -1,0 +1,10 @@
+#ifndef __MESSAGES_H__
+#define __MESSAGES_H__
+
+const char * INPUT_ERROR_STRING = "Input error! Please try again.";
+const char * PLS_INPUT_SECRET_MSG = "Please enter the secret phrase: ";
+const char * YOU_MUST_ENTER_THE_WORD = "You must enter the word.";
+const char * PLAY_AGAIN_MSG = "Would you like to play again (y/n) : ";
+const char * PLS_INPUT_GUESS = "Please input your guess: ";
+
+#endif

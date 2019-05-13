@@ -1,0 +1,8 @@
+#ifndef __UTILS_H__
+#define __UTILS_H__
+
+char GetCharacter(const char * prompt, const char * error,const char validInput[], int validInputLen);
+
+char GetCharacter(const char * prompt, const char * error);
+
+#endif

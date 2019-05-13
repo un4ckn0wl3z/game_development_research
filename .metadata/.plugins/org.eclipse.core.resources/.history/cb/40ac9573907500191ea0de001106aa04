@@ -1,0 +1,49 @@
+//============================================================================
+// Name        : Structd.cpp
+// Author      : Anuwat
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+struct BookType {
+	int bookId;
+	char title[256];
+	char author[256];
+	int year;
+	float price;
+};
+
+void Func(const BookType& book);
+
+int main() {
+
+	BookType aBook;
+
+	aBook.bookId = 1001;
+	strcpy(aBook.title,"A Tale of Two Cities");
+	strcpy(aBook.author,"Anuwat");
+	aBook.year = 1995;
+	aBook.price = 39.5;
+
+	BookType books[10];
+
+	books[0].author = "Pansa";
+	//...
+
+	cout << "" << sizeof(aBook) << endl;
+
+	return 0;
+}
+
+
+void Func(const BookType& book)
+{
+	//
+
+}

@@ -1,0 +1,55 @@
+//============================================================================
+// Name        : HangMan.cpp
+// Author      : Anuwat
+// Version     : v0.1
+// Copyright   : Your copyright notice
+// Description : Simple HangMan game in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstring>
+#include <cctype>
+using namespace std;
+
+
+#define DRAW_END_LINE(x) cout << x << endl << endl;
+#define DRAW(x) cout << x << endl;
+
+const char * INPUT_ERROR_STRING = "Input error! Please try again.";
+const char * PLS_INPUT_SECRET_MSG = "Please enter the secret phrase: ";
+const char * YOU_MUST_ENTER_THE_WORD = "You must enter the word.";
+const char * PLAY_AGAIN_MSG = "Would you like to play again (y/n) : ";
+const char * PLS_INPUT_GUESS = "Please input your guess: ";
+
+
+
+
+void PlayGame();
+bool WantToPlayAgain();
+int GetSecretPhrase(char secretPhrase[], int maxSecretPhraseLen);
+char * MakeHiddenPhrase(const char * secretPhrase, int secretPhraseLen);
+void DrawBoard(int numberOfGuessLeft, const char * noptrHiddenPhase);
+
+
+char GetGuess();
+
+void UpdateBoard(char guess, char * noptrHiddenPhase, const char secretPhrase[],
+		int secretPhraseLen, int & numberOfGuessLeft);
+
+bool IsGameOver(int numberOfGuessLeft, const char * optrHiddenPhase,
+		int secretPhraseLen);
+
+void DisplayResult(const char * secretPhrase, int numberOfGuessLeft);
+
+
+
+int main() {
+
+	do {
+
+		PlayGame();
+
+	} while (WantToPlayAgain());
+
+	return 0;
+}

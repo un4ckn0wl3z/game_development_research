@@ -1,0 +1,2 @@
+char GetCharacter(const char * prompt, const char * error,
+		const char validInput[], int validInputLen);

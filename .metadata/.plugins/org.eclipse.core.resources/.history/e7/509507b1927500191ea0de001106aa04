@@ -1,0 +1,22 @@
+//============================================================================
+// Name        : TypeDefx.cpp
+// Author      : Anuwat
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+
+typedef int IDType;
+
+
+int main() {
+
+
+
+
+	return 0;
+}

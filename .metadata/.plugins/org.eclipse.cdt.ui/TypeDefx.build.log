@@ -1,0 +1,7 @@
+22:19:16 **** Rebuild of configuration Debug for project TypeDefx ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TypeDefx.o" "..\\src\\TypeDefx.cpp" 
+g++ -o TypeDefx.exe "src\\TypeDefx.o" 
+
+22:19:17 Build Finished. 0 errors, 0 warnings. (took 710ms)
+

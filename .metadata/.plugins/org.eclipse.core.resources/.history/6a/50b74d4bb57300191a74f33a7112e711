@@ -1,0 +1,113 @@
+//============================================================================
+// Name        : NumberGuesser.cpp
+// Author      : Anuwat
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+void PlayGame();
+bool WantToPlayAgain();
+bool IsGameOver(int secretNumber, int numberOfTries, int guess);
+int GetGuess(int numberOfTries);
+void DisplayResult(int secretNumber,int numberOfTries);
+
+int main()
+{
+
+	do {
+
+		PlayGame();
+
+	}while(WantToPlayAgain());
+
+
+	return 0;
+}
+
+void PlayGame()
+{
+	const int UPPER_BOUND = 100;
+	int secretNumber = 65;
+	int numberOfTries = ceil(log2(UPPER_BOUND));
+	int guess = 0;
+
+	do {
+
+		guess = GetGuess(numberOfTries);
+
+		if(guess != secretNumber)
+		{
+			numberOfTries--;
+
+			if(guess > secretNumber){
+				cout << "Your guess was too high!" << endl;
+			}else{
+				cout << "Your guess was too low!" << endl;
+			}
+		}
+
+	}while(!IsGameOver(secretNumber,numberOfTries,guess));
+
+	DisplayResult(secretNumber,numberOfTries);
+
+}
+bool WantToPlayAgain()
+{
+	// TODO:
+	return false;
+}
+
+bool IsGameOver(int secretNumber, int numberOfTries, int guess)
+{
+	return secretNumber == guess || numberOfTries <= 0;
+}
+
+
+int GetGuess(int numberOfTries)
+{
+	const int IGNORE_CHARS = 256;
+	int guess;
+	bool failure;
+
+	do {
+		failure = false;
+		cout << "Please enter your guess (number of your guess left :" << numberOfTries << ") ";
+		cin >> guess;
+
+		if(cin.fail())
+		{
+			cin.clear();
+			cin.ignore(IGNORE_CHARS,'\n');
+			cout << "Input error! Please try again." << endl;
+			failure = true;
+		}
+
+	}while(failure);
+
+
+	return guess;
+}
+
+
+void DisplayResult(int secretNumber,int numberOfTries)
+{
+
+	if(numberOfTries > 0)
+	{
+		cout << "You got it! It was : " << secretNumber << endl;
+	}else
+	{
+
+	}
+
+}
+
+
+
+

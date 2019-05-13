@@ -1,0 +1,9 @@
+11:34:18 **** Build of configuration Debug for project variables ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Perl64\site\bin;C:\Perl64\bin;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\MinGW\bin;C:\Users\anuwat\AppData\Local\Microsoft\WindowsApps;C:\Users\anuwat\AppData\Roaming\npm;C:\Users\anuwat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;D:\Program\eclipse-cpp-2019-03-R-win32-x86_64\eclipse]
+
+11:34:19 Build Failed. 1 errors, 0 warnings. (took 90ms)
+

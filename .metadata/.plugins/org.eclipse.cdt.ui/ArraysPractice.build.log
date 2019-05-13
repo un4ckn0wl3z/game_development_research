@@ -1,0 +1,7 @@
+20:36:28 **** Incremental Build of configuration Debug for project ArraysPractice ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArraysPractice.o" "..\\src\\ArraysPractice.cpp" 
+g++ -o ArraysPractice.exe "src\\ArraysPractice.o" 
+
+20:36:28 Build Finished. 0 errors, 0 warnings. (took 678ms)
+

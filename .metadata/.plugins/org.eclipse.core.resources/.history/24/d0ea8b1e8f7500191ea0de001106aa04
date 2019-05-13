@@ -1,0 +1,28 @@
+//============================================================================
+// Name        : Structd.cpp
+// Author      : Anuwat
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct BookType {
+	int bookId;
+	char title[256];
+	char author[256];
+	int year;
+	float price;
+};
+
+int main() {
+
+	BookType aBook;
+
+	aBook.bookId = 1001;
+
+
+	return 0;
+}

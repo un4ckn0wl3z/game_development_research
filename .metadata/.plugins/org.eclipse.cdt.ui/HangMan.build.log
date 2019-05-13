@@ -1,0 +1,9 @@
+23:57:55 **** Rebuild of configuration Debug for project HangMan ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utils.o" "..\\src\\Utils.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Game.o" "..\\src\\Game.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HangMan.o" "..\\src\\HangMan.cpp" 
+g++ -o HangMan.exe "src\\Game.o" "src\\HangMan.o" "src\\Utils.o" 
+
+23:57:57 Build Finished. 0 errors, 0 warnings. (took 2s.179ms)
+

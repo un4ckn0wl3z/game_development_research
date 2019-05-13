@@ -1,0 +1,22 @@
+/*
+ * Utils.h
+ *
+ *  Created on: May 12, 2019
+ *      Author: anuwat
+ */
+
+#ifndef UTILS_H_
+#define UTILS_H_
+
+#include <iostream>
+#include <cstring>
+#include <cctype>
+
+using namespace std;
+
+char GetCharacter(const char * prompt, const char * error,
+		const char validInput[], int validInputLen);
+char GetCharacter(const char * prompt, const char * error);
+
+
+#endif /* UTILS_H_ */
