@@ -1,0 +1,20 @@
+//============================================================================
+// Name        : PointerArray.cpp
+// Author      : Anuwat
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	const int MAX = 10;
+	int array2D[MAX][MAX];
+
+	int (*pointer)[MAX] = array2D;
+
+	return 0;
+}
